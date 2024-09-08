@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Pendaftaran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-image: url(https://radarbanyumas.disway.id/upload/ea184a996d555a9c4fa109ed8ca53368.jpeg);
+            background-size: cover;
+        }
+        form {
+            width: 300px;
+            margin: 0 auto;
+            backdrop-filter:blur(5px);
+            background-color: rgba(0, 0, 0, 0.317);
+            color: white;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+           
+        }
+
+        button{
+           padding: 10px 20px;
+           border-radius: 7px;
+           border: none;
+           background-color: white;
+           color: black;
+           transition: 0.3s;
+        }
+
+        button:hover{
+            background-color: green;
+            color: white;
+        }
+
+        #reset{
+            background-color: white;
+            color: black;
+        }
+
+        #reset:hover{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form>
+         <fieldset>
+            <h3 style="text-align: center;"><legend style="color: yellow;"><b>Akun JKT48</b></legend></h3>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <label for="confirm_password">Konfirmasi Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password">
+            </fieldset>
+
+        <fieldset>
+        <h2 style="color: aquamarine;"><legend style="text-align: center;"><b style="color: yellow;">Data</b></legend></h2>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama">
+        <label>Nama Member JKT48 favorit:</label>
+        <input type="radio" name="member" value="jkt"> Flora<br>
+        <input type="radio" name="member" value="jkt"> Christy<br>
+        <input type="radio" name= "member" value="jkt"> Muthe<br>
+        <input type="radio" name= "member" value="jkt"> Azizi<br>
+        <label> Alasan Meilih Anggota Tersebut:</label>
+        <input type="checkbox" name="hobi" value="cantik"> Cantik<br>
+        <input type="checkbox" name="hobi" value="lucu"> Lucu<br>
+        <input type="checkbox" name="hobi" value="imut"> Imut<br>
+        <input type="checkbox" name="hobi" value="berbakat"> Berbakat<br>
+        </fieldset>
+
+         <fieldset>
+        <legend style="text-align: center;"><b style="color: yellow;">Nama Fanbase</b></legend>
+        <select name="jurusan"> 
+            <option value="ilkom">ZeeMotion (Azizi)</option>    
+            <option value="ti">Florisen (Flora)</option>
+            <option value="kedokteran">Christyzer (Christy)</option>
+            <option value="muthe">Muffin (Muthe)</option>
+        </select>
+
+        <legend><b>Deskripsikan Member JKT48 Favoritmu</b></legend>
+        <textarea name="alamat" id="alamat" rows="5" cols="20"> deskripsikan disini
+        </textarea>
+        <br>
+        <button type="submit">Daftar</button>
+        <button type="reset" id="reset">Reset</button>
+
+        </fieldset>
+
+        
+
+    </form>
+</body>
+</html>
